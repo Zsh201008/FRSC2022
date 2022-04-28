@@ -1,0 +1,10 @@
+Encoder-Decoder: seq-to-seq两端内容相同（并不是speech-to-text或chinese-english）
+hidden_size=16
+Encoder发送output (n个hidden state), multi-head attention在decoder端（查询，动态变化的context vector）
+greedy decoder
+multi-head attention: measured within different subspace
+
+3个limitation:
+1. 需要在transmitter端部署神经网络模型，设备运算能力是否足够？
+2. higher-level semantic, artificial semantic weight, other features
+3. 其他semantic相关的设计，如sampler（类似的物联网通信协议：preamble sampling, Week4-2 P21）
